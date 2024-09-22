@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Carlos</title>
+    <link rel="stylesheet" href="carlos.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="content">
+                <div class="menu container">
+                    <a href="index.html" class="logo"><img src="media/ada.png" alt=""></a>
+                    <input type="checkbox" id="menu"/>
+                    <label for="menu">
+                        <img src="media/menu.png" class="menu-icono" alt="">
+                    </label>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="tours.html">Tours</a></li>
+                            <li><a href="#porquenosotros">Por qué Nosotros</a></li>
+                            <li><a href="#review">Reviews</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+            </div>
+        </header>
+        <main class="info">
+            <section class="principal">
+                <article class="title">
+                    <div class="titulo">
+                        <div class="lugar">
+                            <h2>San Sebastian</h2>
+                        </div> 
+                        <div class="intro">
+                            <p>A diferencia de las playas más concurridas, San Sebastián ofrece un ambiente sereno y menos masificado, ideal para quienes buscan paz y privacidad.</p>
+                        </div>
+                        <div class="icon">
+                            <div class="time">
+                                <img src="media/clock-4.png" alt="">
+                                <p>4 Horas</p>
+                            </div>
+                            <div class="money">
+                                <img src="media/dollar-sign.png" alt="">
+                                <p>50.000 COP</p>
+                            </div>
+                            <div class="bike">
+                                <img src="media/bike.png" alt="">
+                                
+                                <p>Bicicleta Equipada</p>
+                            </div>
+                        </div>                                                                                                                
+                    </div>
+                </article>
+                <article class="cont">
+                    <div class="image-cont">
+                        <img src="lugares/sans_1.png" id="content1" class="active">
+                        <img src="lugares/sans_2.png" id="content2">
+                        <img src="lugares/sans_3.png" id="content3">
+                        <img src="lugares/sans_4.png" id="content4">
+                        <img src="lugares/sans_5.png" id="content5">
+                    </div>
+                    <div class="dot-cont">
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                        <button onclick="dot(3)"></button>
+                        <button onclick="dot(4)"></button>
+                        <button onclick="dot(5)"></button>
+                    </div>
+                    <button id="prev" onclick="prev()"></button>
+                    <button id="next" onclick="next()"></button>
+                </article>
+            <article class="galeria">
+                <div class="text">   
+                    <p>Visita con nosotros la vereda El Carlos, iremos en bicicleta hasta la vereda y haremos caminata hasta la cascada y luego conoceremos su mirador </p>
+                </div>
+                <div class="icon2">
+                    <div class="time">
+                        <img src="media/clock-4.png" alt="">
+                        <p>4 Horas</p>
+                    </div>
+                    <div class="money">
+                        <img src="media/dollar-sign.png" alt="">
+                        <p>50.000 COP</p>
+                    </div>
+                    <div class="km">
+                        <img src="media/arrow-big-right-dash.png" alt="">                        
+                        <p>8Km</p>
+                   </div>
+                   <div class="coffe">
+                        <img src="media/coffee.png" alt="">
+                        <p>Jugo</p>
+                    </div>
+                    <div class="fruit">
+                        <img src="media/apple.png" alt="">
+                        <p>Fruta</p>
+                    </div>
+                    <div class="point">
+                        <img src="media/map-pin.png" alt="">                        
+                        <p>4 Lugares</p>
+                </div>
+            </article>
+                <script src="nueva.js"></script>
+
+            </section>  
+            <aside>
+                <div class="box2">
+                    <div class="imagen">
+                        <img src="media/volcan.png" alt="">
+                    </div>
+                    <div class="boton">
+                        <a href="volcan.html" class="btntour">Volcan de Lodo</a>
+                    </div>
+                    <div class="infotour">
+                        <div class="info">
+                            <p>Sumérgete en los baños de lodo, conocidos por sus beneficios terapéuticos y exfoliantes para la piel.</p>
+                        </div>
+                        <div class="icon3">
+                            <div class="time">
+                                <img src="media/clock-4.png" alt="">
+                                <p>6 Horas</p>
+                            </div>
+                            <div class="money">
+                                <img src="media/dollar-sign.png" alt="">
+                                <p>50.000 COP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="imagen">
+                        <img src="media/carlos.png" alt="">
+                    </div>
+                    <div class="boton">
+                        <a href="carlos.html" class="btntour">El Carlos</a>
+                    </div>
+                    <div class="infotour">
+                        <div class="mejor">
+                            <p>La mejor esperiencia recorriendo la verda El Carlos </p>
+                        </div>
+                        <div class="icon3">
+                            <div class="time">
+                                <img src="media/clock-4.png" alt="">
+                                <p>4 Horas</p>
+                            </div>
+                            <div class="money">
+                                <img src="media/dollar-sign.png" alt="">
+                                <p>50.000 COP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>  
+        </main>
+        <article class="bottom">
+        <div class="bajo">
+            <article class="contact" id="contacto">
+                <div class="hablemos">
+                    <form action="https://formsubmit.co/duvanrms365@gmail.com" method="POST">
+
+                        <input type="text" name="nombre" placeholder="¿Cual Es tu nombre?" class="campo">
+                        <input type="tel" name="numero" placeholder="Numero Telefonico" class="campo">
+                        <textarea name="mensaje" placeholder="¿Cuando quieres viajar?"></textarea>
+                        <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">                       
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/bike.html">
+                        <input type="hidden" name="_captcha" value="false">
+                     </form>
+                </div>
+                <div class="punto">
+                    <div class="text12">
+                        <h2>Punto de encuentro</h2>
+                        <p>Estamos ubicados cerca a la trilladora. Encuéntranos fácilmente buscando " Creaciones Madu " en tu aplicación de mapas.</p>
+                    </div>
+                    <div class="mapa"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1659.4147816679993!2d-76.77498742088055!3d8.423672584642846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1725080715637!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="bajo2">
+                <article class="lista">
+                    <div class="preguntas1">
+                        <details>
+                            <summary>
+                            ¿Puedo reervar en linea?
+                            </summary>
+                            <p>¡Sí! Puedes reservar ahora mismo, aquí mismo. Puedes consultar nuestra pasarela de pagos y nuestra presencia en línea para confiar en el proceso. Si tienes algún problema no dudes en contactarnos, te ayudaremos.</p>
+                        </details>                        
+                    </div>
+                    <div class="preguntas2">
+                        <details>
+                            <summary>
+                            ¿Puedo reervar en linea?
+                            </summary>
+                            <p>¡Sí! Puedes reservar ahora mismo, aquí mismo. Puedes consultar nuestra pasarela de pagos y nuestra presencia en línea para confiar en el proceso. Si tienes algún problema no dudes en contactarnos, te ayudaremos.</p>
+                        </details>                        
+                    </div>
+                    <div class="preguntas3">
+                        <details>
+                            <summary>
+                            ¿Puedo reervar en linea?
+                            </summary>
+                            <p>¡Sí! Puedes reservar ahora mismo, aquí mismo. Puedes consultar nuestra pasarela de pagos y nuestra presencia en línea para confiar en el proceso. Si tienes algún problema no dudes en contactarnos, te ayudaremos.</p>
+                        </details>                        
+                    </div>
+                    <div class="preguntas4">
+                        <details>
+                            <summary>
+                            ¿Puedo reervar en linea?
+                            </summary>
+                           <p> ¡Sí! Puedes reservar ahora mismo, aquí mismo. Puedes consultar nuestra pasarela de pagos y nuestra presencia en línea para confiar en el proceso. Si tienes algún problema no dudes en contactarnos, te ayudaremos.</p>
+                        </details>                        
+                    </div>
+            </article>
+        </div>
+    </article>
+    <footer>
+        <div class="fizquierdo">
+            <div class="foologo">
+                <img src="media/ada.png" alt="">
+            </div>
+            <div class="redes">
+            <a href="#"><img src="media/whatsapp.png" alt=""></a>    
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100064101482770"><img src="media/facebook.png" alt=""></a>   
+            <a target="_blank" href="https://www.instagram.com/alexbikers24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="media/instagram.png" alt=""></a>   
+            <a href="#"><img src="media/tik-tok.png" alt=""></a> 
+            </div>
+       </div> 
+       <div class="fderecho">
+            <p>Calle xx # xx - xxx  Necoclí - Colombia</p>
+            <a href="#">whatsapp +57 xxx xxx xxxx</a>
+            <a href="mailto:Info@alexbikers.com">Info@alexbikers.com</a>
+       </div>
+    </footer>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

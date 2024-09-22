@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 2000px;
+    background-color: aqua;
+}
+.container{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.slider input{
+    visibility: hidden;
+    display: none;
+
+}
+.botones{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+.botones label{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+.botones label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.slider input:nth-child(1):checked ~ .botones label:nth-child(1),
+.slider input:nth-child(2):checked ~ .botones label:nth-child(2),
+.slider input:nth-child(3):checked ~ .botones label:nth-child(3){
+    opacity: 1;
+    scroll-margin: 1.2;
+    width: 40px;
+}
+.content{
+    position: relative;
+    width: 150vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+
+}
+.firstslide, .secondslide, .thirdslide{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstslide{
+    background-image: url(galeria/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.secondslide{
+    background-image: url(galeria/carne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.thirdslide{
+    background-image: url(galeria/frijoles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider input:nth-child(1):checked ~ .content{
+    left: 0;
+}
+.slider input:nth-child(2):checked ~ .content{
+    left: -50vw;
+}
+.slider input:nth-child(3):checked ~ .content{
+    left: -100vw;
+}

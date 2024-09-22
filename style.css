@@ -1,0 +1,830 @@
+@font-face {
+    font-family: "CamptonExtraBold";
+
+    src: url(fonts/CamptonExtraBold.otf);
+}
+@font-face {
+    font-family: "IsabellaSans-Regular";
+
+    src: url(fonts/IsabellaSans-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: white;
+}
+.contenedor{
+    width: 100%;
+    /*width: 1000px;*/
+    max-width: 1440px;
+}
+/**/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content{
+    background-color: #81ae9e;
+    min-height: 100px;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin: 3px;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+.menu .navbar ul li a {
+    font-family: "IsabellaSans-Regular";
+    font-size: 18px;
+    padding: 20px;
+    color: #bf645c;
+    display: block;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover{
+    color: #81ae9e;
+    background: #bf645c;
+    border-radius: 30px;    
+}
+#menu{
+    display:none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor:pointer;
+    display:none;
+}
+@media(max-width:600px){
+    .content{
+        min-height: 110px;
+    }
+    .menu{
+        top: 0;
+    }
+    .menu label{
+        display: initial;
+
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #E8D6CB;
+        display: none;
+
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu img{
+        margin-left: 20px;
+    }
+    .menu-icono{
+        margin-right: 20px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+}
+
+main{
+    width: 100%;
+    background: #81ae9e;
+
+}
+.info{
+    width: 100%;
+}
+.info .principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #81ae9e;
+
+}
+.info .principal2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    background: #bf645c;
+
+}
+summary{
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    color: #bf645c;
+    font-size: 20px;
+}
+input{
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    font-size: 16px;
+}
+::placeholder{
+    color: #000000;
+}
+textarea{
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    font-size: 16px;
+}
+details{
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    color: #bf645c;
+    font-size: 20px;
+}
+details p{
+    color: #81ae9e;
+}
+.text1{
+    height: 500px;
+    display: flex;
+    justify-content: end;
+}
+.conttext{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.aqui{
+    text-align: left;
+    font-family: "CamptonExtraBold";
+    font-size: 25px;
+    color: #bf645c;
+}
+.necocli{
+    margin: 20px;
+    text-align: center;
+    font-family: "IsabellaSans-Regular";
+    font-size: 18px;
+    color: #bf645c;
+}
+.ya{
+    margin: 20px;
+}
+.reserya{
+    padding: 10px 20px;
+    color: black;
+    background: #bf645c;
+    border-radius: 10px;
+    font-family: "CamptonExtraBold";
+    font-size: 20px;
+}
+.reserya:hover{
+    background-color: black;
+    color: #bf645c;
+}
+.imagen1{
+    height: 500px;
+    background-image: url(media/biciuno.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen2{
+    height: 500px;
+    background-image: url(media/volcan_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text2{
+    height: 500px;
+    background: #81ae9e;
+    display: flex;
+    justify-content: center;
+}
+.conttext2{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.buscando{
+    text-align: center;
+    font-family: "CamptonExtraBold";
+    font-size: 25px;
+    color: #bf645c;
+    margin-top: 50px;
+}
+.hiciste{
+    margin: 20px;
+    text-align: center;
+    font-family: "IsabellaSans-Regular";
+    font-size: 18px;
+    color: #bf645c;
+}
+.tourbtn{
+    margin-top: 20px;
+}
+.eligetour{
+    padding: 10px 20px;
+    color: black;
+    background: #bf645c;
+    border-radius: 10px;
+    font-family: "CamptonExtraBold";
+    font-size: 20px;
+}
+.eligetour:hover{
+    background-color: black;
+    color: #bf645c;
+}
+.text3{
+    width: 100%;
+    height: 200px;
+    background: #81ae9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mas{
+    text-align: center;
+    font-family: "CamptonExtraBold";
+    font-size: 30px;
+    color: #bf645c;
+}
+.creemos{
+    width: 50%;
+    text-align: center;
+    color: #bf645c;
+    font-family: "IsabellaSans-Regular";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info .why{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text4{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.numero1{
+    font-family: "CamptonExtraBold";
+    font-size: 40px;
+    text-align: center;
+    color: #bf645c;
+
+}
+.urb1{
+    text-align: center;
+    text-align: center;
+    color: #bf645c;
+    font-family: "IsabellaSans-Regular";
+    font-size: 20px;
+    font-weight: bold;
+}
+/*.text5{
+    width: 300px;
+    height: 400px;
+    background: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text6{
+    width: 300px;
+    height: 400px;
+    background: lawngreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}*/
+.reseña{
+    width: 100%;
+    background-image: url(media/fondorvs_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lore {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    font-family: "CamptonExtraBold";
+}
+.reseña .combo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.reseña .lara{
+    padding: 0px 50px 50px 50px;
+}
+.text7{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.5);    
+}
+.opinion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.foto img{
+    border-radius: 50px ;
+    margin: 20px;    
+}
+.critico a{
+    color: #bf645c;
+    font-size: 30px;
+    margin: 10px;
+    font-family: "CamptonExtraBold";
+}
+.critica{
+    color: white;
+    text-align: center;
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.numres{
+    width: 100%;
+    height: 250px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text10{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.text10 p{
+    font-size: 50px;
+    text-align: center;
+    color: #bf645c;
+    font-family:"CamptonExtraBold";
+}
+.boxlogos{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.boton{
+    width: 100%;
+    height: 200px;
+    background: #81ae9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.reserva{
+    background: #333333;
+    color: #c16d63;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+.reserva:hover{
+    background:#c16d63;
+    color: #333333;
+}
+.titulo{
+    width: 100%;
+    height: 100px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text11{
+    width: 100%;
+    text-align: center;
+}
+.text11 p{
+    font-size: 30px;
+    color: #c16d63;
+}
+.lista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333333;
+    color: #c16d63;
+    padding-bottom: 20px;
+
+}
+.preguntas1{
+    width: 60%;
+}
+.preguntas2{
+    width: 60%;
+}
+.preguntas3{
+    width: 60%;
+}
+.preguntas4{
+    width: 60%;
+}
+.lista:hover{
+    cursor: pointer;
+}
+details{
+    border-bottom: 1px solid #c16d63;
+    padding: 10px;
+
+}
+.bajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.hablemos{
+    height: 500px;
+    width: 50%;
+    background: #81ae9e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 50%;
+}
+.hablemos form .campo, textarea{
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    background: none;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.hablemos form textarea{
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 140px;
+    max-height: 140px;
+}
+.hablemos .btn-enviar{
+    width: 80%;
+    padding: 15px;
+    font-size:16px;
+    border: none;
+    outline: 0px;
+    background: #c16d63;
+    color: #333333;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.btn-enviar:hover{
+    background: #81ae9e;
+    color: #c16d63;
+}
+.punto{
+    width: 50%;
+    height: 500px;
+    background: #333333;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.text12{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+}
+.text12 h2{
+    font-size: 20px;
+    color: #c16d63;
+}
+.text12 p{
+    font-size: 16px;
+    color: #c16d63;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 80%;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background: #333333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fizquierdo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px;
+}
+.fderecho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    color: #bf645c;
+    font-size: 20px;
+}
+.fderecho a{
+    font-family:"IsabellaSans-Regular" ;
+    font-weight: bolder;
+    color: #bf645c;
+    font-size: 20px;
+}
+@media screen and (max-width:1440px){
+
+
+    .main{
+        width: 100%;
+
+    }
+    footer{
+        width:  100%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .main{
+        width: 100%;
+
+    }
+    .info .principal{
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+    .text1{
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conttext{
+        height: 320px;
+        width: 100%;
+        padding: 0px;
+    }
+    .aqui{
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .necocli{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    .imagen1{
+        height: 320px;
+
+    }
+    .info .principal2{
+        grid-template-columns: 1fr;
+        margin: 0px;
+        padding: 0px;
+    }
+    .text2{
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conttext2{
+        height: 320px;
+        width: 100%;
+        padding: 0px;
+    }
+    .buscando{
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+    }
+    .hiciste{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    .imagen2{
+        height: 320px;
+    }
+    .text3{
+        width: 100%;
+        height: auto;
+        background: #81ae9e;
+        padding: 15px;    
+    }
+    .text4{
+        width: 100%;
+        height: 320px;
+        background: #81ae9e;
+        padding: 0px;
+    }
+    /*.text5{
+        width: 100%;
+        height: 320px;
+        background: hotpink;
+    }
+    .text6{
+        width: 100%;
+        height: 320px;
+        background: lawngreen;
+    }*/
+    .info .why{
+        display: flex;
+        flex-direction: column;
+    }
+    .lore{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reseña .combo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .reseña .lara{
+        padding: 0px;
+    }
+    .text7{
+        height: 320px;
+    }    
+    .opinion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .foto img{
+        margin: 0px;    
+    }
+    .critico a{
+        margin: 0px;
+    }
+    .critica{
+        margin: 0px;
+    }
+    
+    .numres{
+        height: auto;
+    }
+    .text10{
+        padding: 20px;
+    }
+    .text10 p{
+        font-size: 30px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        row-gap: 40px;
+
+    }
+    .hablemos{
+        width: 100%;
+        height: 320px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .form{
+        width: 100%;
+    }
+    .hablemos form .campo, textarea{
+        width: 100%;
+    }
+    .hablemos form textarea{
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 140px;
+        max-height: 140px;
+    }
+    .hablemos .btn-enviar{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .punto{
+        width: 100%;
+        height: auto;
+    }
+    .text12{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0px;
+
+    }
+    .text12 h2{
+        text-align: center;
+        padding: 10px;
+    }
+    .text12 p{
+        text-align: center;
+    }
+    .mapa{
+        padding: 10px;
+    }
+    iframe{
+        width: 80%;
+    }
+
+    footer{
+        width:  100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
